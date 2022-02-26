@@ -6,9 +6,6 @@ import (
 )
 
 func (app *application) healthchechHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "status: available")
-	fmt.Fprintf(w, "environment: %s\n", app.config.env)
-	fmt.Fprintf(w, "version: %s\n", version)
 	// Create a fixed-format JSON response from a string. Notice how we're using a raw
 	// string literal (enclosed with backticks) so that we can include double-quote
 	// characters in the JSON without needing to escape them? We also use the %q verb to

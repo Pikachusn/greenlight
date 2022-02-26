@@ -1,5 +1,5 @@
 module greenlight.alexedwards.net
 
-go 1.17
+go 1.16
 
-require github.com/julienschmidt/httprouter v1.3.0 // indirect
+require github.com/julienschmidt/httprouter v1.3.0
